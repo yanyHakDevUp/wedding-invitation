@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif-khmer: var(--font-noto-serif-khmer), serif;
+    --font-sans-khmer: var(--font-noto-sans-khmer), sans-serif;
+    --font-playfair: var(--font-playfair), serif;
+  }
+
+  body {
+    font-family: var(--font-sans-khmer);
+    background-color: #071426;
+    color: #F5F1E8;
+  }
+
+  h1, h2, h3, .font-serif-khmer {
+    font-family: var(--font-serif-khmer);
+  }
+
+  .font-playfair {
+    font-family: var(--font-playfair);
+  }
+}
+
+/* Custom Gold Text Gradients */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F5E5C0 0%, #C8A96B 50%, #9E7D3B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-bright {
+  background: linear-gradient(180deg, #FFFFFF 0%, #E4D2A3 60%, #C8A96B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-navy-dark {
+  background-color: #071426;
+}
+
+.bg-navy-deep {
+  background-color: #0B1930;
+}
+
+.bg-navy-card {
+  background-color: rgba(13, 27, 50, 0.75);
+}
+
+.border-gold-subtle {
+  border-color: rgba(200, 169, 107, 0.25);
+}
+
+.border-gold-glow {
+  border-color: rgba(200, 169, 107, 0.6);
+  box-shadow: 0 0 15px rgba(200, 169, 107, 0.2);
+}
+
+/* Glassmorphism */
+.glass-card {
+  background: rgba(11, 25, 48, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 169, 107, 0.2);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #071426;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8A96B;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E4D2A3;
+}
+
+/* Subtle Shimmer Animation */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 3s infinite;
+}
