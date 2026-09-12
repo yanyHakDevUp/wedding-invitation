@@ -147,20 +147,20 @@ export const weddingConfig: WeddingConfig = {
   ],
 
   media: {
-    heroPhoto: "/img/3.PNG",
-    cinematicPhoto1: "/img/3.PNG",
+    heroPhoto: "/img/6.jpg",
+    cinematicPhoto1: "/img/6.jpg",
     cinematicPhoto2: "/img/4.PNG",
-    finalPhoto: "/img/3.PNG",
+    finalPhoto: "/img/6.jpg",
     videoPoster: "/img/4.PNG",
     videoUrl: "/img/video.mp4",
     audioUrl: "https://www.youtube.com/watch?v=-uyCMdjWK5Y&list=RD-uyCMdjWK5Y&start_radio=1",
     gallery: [
       { id: 1, src: "/img/1.JPEG", alt: "កូនក្រមុំ", aspect: "portrait" },
       { id: 2, src: "/img/2.PNG", alt: "កូនកំលោះ", aspect: "portrait" },
-      { id: 3, src: "/img/3.PNG", alt: "រូបថតអាពាហ៍ពិពាហ៍", aspect: "landscape" },
+      { id: 3, src: "/img/6.jpg", alt: "រូបថតអាពាហ៍ពិពាហ៍", aspect: "landscape" },
       { id: 4, src: "/img/4.PNG", alt: "រូបថតអនុស្សាវរីយ៍", aspect: "portrait" },
-      { id: 5, src: "/img/1.JPEG", alt: "រូបថតគូស្នេហ៍", aspect: "square" },
-      { id: 6, src: "/img/2.PNG", alt: "បរិយាកាសពិធី", aspect: "landscape" },
+      { id: 5, src: "/img/5.JPG", alt: "រូបថតគូស្នេហ៍", aspect: "square" },
+      { id: 6, src: "/img/6.jpg", alt: "បរិយាកាសពិធី", aspect: "landscape" },
     ],
   },
 
