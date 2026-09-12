@@ -47,7 +47,7 @@ export const Couple: React.FC = () => {
           >
             <div className="relative w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-xl border-2 border-[#6B0D18]/30 mb-6 glass-card-white">
               <img
-                src={weddingConfig.couple.bride.portrait}
+                src={weddingConfig.couple.groom.portrait}
                 alt={weddingConfig.couple.bride.fullName}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
@@ -75,7 +75,7 @@ export const Couple: React.FC = () => {
           >
             <div className="relative w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-xl border-2 border-[#6B0D18]/30 mb-6 glass-card-white">
               <img
-                src={weddingConfig.couple.groom.portrait}
+                src={weddingConfig.couple.bride.portrait}
                 alt={weddingConfig.couple.groom.fullName}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
