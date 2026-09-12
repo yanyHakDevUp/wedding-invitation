@@ -31,8 +31,8 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "សិរីមង្គលអាពាហ៍ពិពាហ៍ | រតនៈ & សុភ័ក្ត្រា",
-  description: "លិខិតអញ្ជើញចូលរួមពិធីសិរីមង្គលអាពាហ៍ពិពាហ៍ រតនៈ & សុភ័ក្ត្រា",
+  title: "សិរីមង្គលអាពាហ៍ពិពាហ៍ | សារៈ & គីមឡែន",
+  description: "លិខិតអញ្ជើញចូលរួមពិធីសិរីមង្គលអាពាហ៍ពិពាហ៍ សារៈ & គីមឡែន",
 };
 
 export default function RootLayout({

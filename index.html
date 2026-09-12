@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>សិរីមង្គលអាពាហ៍ពិពាហ៍ | Khmer Wedding Invitation</title>
+  <meta name="description" content="លិខិតអញ្ជើញចូលរួមពិធីសិរីមង្គលអាពាហ៍ពិពាហ៍">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Lotus Canvas Effect -->
+  <canvas id="petal-canvas"></canvas>
+
+  <div class="container">
+    
+    <!-- Top Decorative Header Banner -->
+    <header class="header-banner">
+      <div class="top-blessing">សូមគោរពអញ្ជើញ</div>
+      <div class="sub-blessing">ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាងកញ្ញា និងប្រិយមិត្តមិត្តភក្តិទាំងអស់</div>
+      
+      <div class="kbach-divider">
+        <div class="kbach-line"></div>
+        <div class="kbach-symbol">❖ ⚜ ❖</div>
+        <div class="kbach-line"></div>
+      </div>
+    </header>
+
+    <!-- Formal Parents & Couple Names -->
+    <section class="couple-intro">
+      <div class="parents-grid">
+        <div class="parents-box">
+          <h4>ខាងប្រុស (ឪពុកម្តាយកូនកំលោះ)</h4>
+          <div class="parents-names">
+            លោក <strong>អ៊ុំ សុវណ្ណ</strong><br>
+            លោកស្រី <strong>ចាន់ សុខា</strong>
+          </div>
+        </div>
+        <div class="parents-box">
+          <h4>ខាងស្រី (ឪពុកម្តាយកូនក្រមុំ)</h4>
+          <div class="parents-names">
+            លោក <strong>សេង វិបុល</strong><br>
+            លោកស្រី <strong>មាស គឹមហុង</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="kbach-divider">
+        <div class="kbach-line"></div>
+        <div class="kbach-symbol">⚜</div>
+        <div class="kbach-line"></div>
+      </div>
+
+      <div class="couple-names-wrapper">
+        <div class="name-card">
+          <div class="name-title">កូនកំលោះ</div>
+          <div class="groom-name">រុន សារៈ</div>
+        </div>
+        <div class="wedding-ampersand">&</div>
+        <div class="name-card">
+          <div class="name-title">កូនក្រមុំ</div>
+          <div class="bride-name">លួប គីមឡែន</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================================
+         FEATURED SECTION: WEDDING DATE & CEREMONY
+         Culturally Natural Phrasing & Master Khmer Date Card
+         ============================================================= -->
+    <section class="wedding-ceremony-section" id="ceremony">
+      
+      <!-- Natural Phrasing Heading -->
+      <div class="ceremony-main-header">
+        <h1 class="khmer-ceremony-title">សិរីមង្គលអាពាហ៍ពិពាហ៍</h1>
+        <h2 class="khmer-ceremony-subtitle">នឹងប្រារព្ធឡើងនៅថ្ងៃ</h2>
+      </div>
+
+      <!-- Master Date Card -->
+      <div class="master-date-card">
+        <!-- Corner Kbach Ornaments -->
+        <div class="corner-ornament corner-top-left"></div>
+        <div class="corner-ornament corner-top-right"></div>
+        <div class="corner-ornament corner-bottom-left"></div>
+        <div class="corner-ornament corner-bottom-right"></div>
+
+        <!-- Grand Date Hero Display -->
+        <div class="date-highlight-hero">
+          <!-- Full Khmer Date Format: ថ្ងៃ[DAY] ទី[DATE] ខែ[MONTH] ឆ្នាំ[YEAR] -->
+          <div class="full-khmer-date">
+            ថ្ងៃអាទិត្យ ទី<span class="date-num">១៨</span> ខែមករា ឆ្នាំ<span class="year-num">២០២៦</span>
+          </div>
+          <div class="lunar-calendar-text">
+            ( ត្រូវនឹងថ្ងៃ ៧កើត ខែបុស្ស ឆ្នាំម្សាញ់ សប្តស័ក ព.ស. ២៥៦៩ )
+          </div>
+
+          <!-- Time Pills Display: វេលាម៉ោង [TIME] -->
+          <div class="time-hero-pills">
+            <div class="time-pill">
+              <i class="fa-regular fa-clock time-pill-icon"></i>
+              <div class="time-pill-text">
+                ពិធីព្រឹក <span>វេលាម៉ោង ០៧:០០ ព្រឹក</span>
+              </div>
+            </div>
+            <div class="time-pill">
+              <i class="fa-solid fa-utensils time-pill-icon"></i>
+              <div class="time-pill-text">
+                ពិធីពិសាភោជនាហារ <span>វេលាម៉ោង ០៥:០០ ល្ងាច</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khmer Numerals Countdown Clock -->
+        <div class="khmer-countdown-box">
+          <div class="countdown-title">❖ រាប់ថយក្រោយដល់ថ្ងៃសិរីមង្គល ❖</div>
+          <div class="countdown-grid">
+            <div class="countdown-card">
+              <div class="countdown-value" id="days-val">--</div>
+              <div class="countdown-label">ថ្ងៃ</div>
+            </div>
+            <div class="countdown-card">
+              <div class="countdown-value" id="hours-val">--</div>
+              <div class="countdown-label">ម៉ោង</div>
+            </div>
+            <div class="countdown-card">
+              <div class="countdown-value" id="mins-val">--</div>
+              <div class="countdown-label">នាទី</div>
+            </div>
+            <div class="countdown-card">
+              <div class="countdown-value" id="secs-val">--</div>
+              <div class="countdown-label">វិនាទី</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Traditional Ceremony Timetable Timeline -->
+        <div class="ceremony-timetable">
+          <h3 class="timetable-header">កម្មវិធីសិរីមង្គលអាពាហ៍ពិពាហ៍</h3>
+          
+          <div class="timeline-items">
+            <div class="timeline-card">
+              <div class="timeline-time">
+                <i class="fa-regular fa-sun"></i> វេលាម៉ោង ០៧:០០ ព្រឹក
+              </div>
+              <div class="timeline-event-khmer">ពិធីហែជំនូន</div>
+              <div class="timeline-desc">ជួបជុំភ្ញៀវកិត្តិយស និងរៀបចំក្បួនហែជំនូនផ្លែឈើ</div>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-time">
+                <i class="fa-solid fa-scissors"></i> វេលាម៉ោង ០៨:៣០ ព្រឹក
+              </div>
+              <div class="timeline-event-khmer">ពិធីកាត់សក់បង្កក់សិរី</div>
+              <div class="timeline-desc">ពិធីកាត់សក់បង្កក់សិរី និងសែនព្រេនជូនមាតាបិតាកូនកំលោះកូនក្រមុំ</div>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-time">
+                <i class="fa-solid fa-ribbon"></i> វេលាម៉ោង ១០:០០ ព្រឹក
+              </div>
+              <div class="timeline-event-khmer">ពិធីចងដៃ & បក់ផ្សែងទៀន</div>
+              <div class="timeline-desc">ពិធីចងដៃពរជ័យ និងបក់ផ្សែងទៀនជ័យមង្គល</div>
+            </div>
+
+            <div class="timeline-card">
+              <div class="timeline-time">
+                <i class="fa-solid fa-champagne-glasses"></i> វេលាម៉ោង ០៥:០០ ល្ងាច
+              </div>
+              <div class="timeline-event-khmer">ពិធីពិសាភោជនាហារ</div>
+              <div class="timeline-desc">ទទួលទានអាហារសម្រន់ និងពិធីជប់លៀងអបអរសាទរ</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue & Location Details Card with Google Maps Button -->
+        <div class="venue-location-card">
+          <div class="venue-details-content">
+            <div class="venue-title-row">
+              <div class="location-icon-wrapper">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <div class="venue-name-khmer">អាគារពិព័រណ៍ ព្រីមៀ សែនសុខ (Premier Centre Sen Sok)</div>
+                <div style="color: var(--gold-primary); font-weight: bold; font-size: 0.95rem; margin-top: 2px;">
+                  សាលពិធី (Hall A)
+                </div>
+              </div>
+            </div>
+
+            <div class="venue-address-khmer">
+              អាសយដ្ឋាន៖ ផ្លូវលេខ ១០០៣ សង្កាត់ភ្នំពេញថ្មី ខណ្ឌសែនសុខ រាជធានីភ្នំពេញ
+            </div>
+
+            <div class="google-map-action">
+              <a href="https://maps.google.com/?q=Premier+Centre+Sen+Sok+Phnom+Penh" target="_blank" class="btn-google-maps" id="btn-google-maps">
+                <i class="fa-solid fa-map-location-dot"></i>
+                មើលទីតាំងលើ Google Maps
+              </a>
+            </div>
+          </div>
+
+          <!-- Embedded Map Visual Preview -->
+          <div class="map-embed-preview">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.5684784407866!2d104.8812!3d11.5835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951664d5089bf%3A0x6fbca83c6d66e741!2sPremier%20Centre%20Sen%20Sok!5e0!3m2!1sen!2skh!4v1700000000000!5m2!1sen!2skh" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Additional Interactive Sections: Wishing Wall & RSVP -->
+    <section class="wishing-rsvp-grid">
+      
+      <!-- Wishing Wall Box -->
+      <div class="card-box">
+        <h3 class="card-box-title">❖ សារជូនពរជ័យ ❖</h3>
+        <form id="blessing-form">
+          <div class="form-group">
+            <label for="guest-name">ឈ្មោះរបស់អ្នក</label>
+            <input type="text" id="guest-name" class="form-input" placeholder="ឧទាហរណ៍៖ សុខ ចាន់ណា" required>
+          </div>
+          <div class="form-group">
+            <label for="guest-wish">សារជូនពរដល់គូស្វាមីភរិយាថ្មី</label>
+            <textarea id="guest-wish" class="form-textarea" rows="3" placeholder="សូមជូនពរឱ្យអ្នកទាំងពីរមានសុភមង្គល..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <i class="fa-solid fa-paper-plane"></i> ផ្ញើសារជូនពរ
+          </button>
+        </form>
+
+        <div class="kbach-divider" style="margin: 20px 0;">
+          <div class="kbach-line"></div>
+          <div class="kbach-symbol">❖</div>
+          <div class="kbach-line"></div>
+        </div>
+
+        <div class="wishes-stream" id="wishes-stream">
+          <div class="wish-item">
+            <div class="wish-author">លោកជំទាវ គឹម លីដា</div>
+            <div class="wish-message">សូមជូនពរក្មួយទាំងពីរជួបតែសេចក្តីសុខ សុភមង្គល និងស្រឡាញ់គ្នារហូតដល់ចាស់តោងក្បង!</div>
+          </div>
+          <div class="wish-item">
+            <div class="wish-author">លោក ហេង សុជាតិ</div>
+            <div class="wish-message">សូមឱ្យអាពាហ៍ពិពាហ៍មួយនេះពេញដោយស្នាមញញឹម រកស៊ីទទួលទានមានបានត្រជាក់ត្រជុំ!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RSVP Box -->
+      <div class="card-box">
+        <h3 class="card-box-title">❖ បញ្ជាក់ការចូលរួម (RSVP) ❖</h3>
+        <form id="rsvp-form">
+          <div class="form-group">
+            <label for="rsvp-name">ឈ្មោះលោកអ្នក</label>
+            <input type="text" id="rsvp-name" class="form-input" placeholder="បញ្ចូលឈ្មោះ..." required>
+          </div>
+          <div class="form-group">
+            <label for="rsvp-phone">លេខទូរស័ព្ទ</label>
+            <input type="tel" id="rsvp-phone" class="form-input" placeholder="012 345 678..." required>
+          </div>
+          <div class="form-group">
+            <label for="rsvp-count">ចំនួនអ្នកចូលរួម</label>
+            <select id="rsvp-count" class="form-select">
+              <option value="១ នាក់">១ នាក់</option>
+              <option value="២ នាក់">២ នាក់ (គូស្វាមីភរិយា)</option>
+              <option value="៣ នាក់">៣ នាក់</option>
+              <option value="៤ នាក់">៤ នាក់ ឬច្រើនជាងនេះ</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="rsvp-status">វត្តមាន</label>
+            <select id="rsvp-status" class="form-select">
+              <option value="ចូលរួម">រីករាយនឹងចូលរួម (Will Attend)</option>
+              <option value="សោកស្តាយ">មិនអាចចូលរួមបាន (Regretfully Decline)</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-submit">
+            <i class="fa-solid fa-circle-check"></i> បញ្ជាក់វត្តមាន
+          </button>
+        </form>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-title">សូមអរគុណយ៉ាងជ្រាលជ្រៅចំពោះវត្តមានដ៏ខ្ពង់ខ្ពស់របស់លោកអ្នក!</div>
+      <p>សិរីមង្គលអាពាហ៍ពិពាហ៍ សារៈ & គីមឡែន</p>
+    </footer>
+
+  </div>
+
+  <!-- Audio Toggle Button -->
+  <button class="audio-player-toggle" id="audio-toggle" title="បើក/បិទ តន្ត្រីអាពាហ៍ពិពាហ៍">
+    <i class="fa-solid fa-music"></i>
+  </button>
+  <audio id="wedding-audio" loop src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=traditional-asian-ambient-112520.mp3"></audio>
+
+  <!-- Custom Logic -->
+  <script src="script.js"></script>
+</body>
+</html>

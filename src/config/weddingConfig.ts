@@ -69,8 +69,8 @@ export interface WeddingConfig {
 export const weddingConfig: WeddingConfig = {
   couple: {
     bride: {
-      name: "សុភ័ក្ត្រា",
-      fullName: "សេង សុភ័ក្ត្រា",
+      name: "គីមឡែន",
+      fullName: "លួប គីមឡែន",
       role: "កូនក្រមុំ",
       father: "លោក សេង វិបុល",
       mother: "លោកស្រី មាស គឹមហុង",
@@ -78,8 +78,8 @@ export const weddingConfig: WeddingConfig = {
       portrait: "/img/1.JPEG",
     },
     groom: {
-      name: "រតនៈ",
-      fullName: "សុវណ្ណ រតនៈ",
+      name: "សារៈ",
+      fullName: "រុន សារៈ",
       role: "កូនកំលោះ",
       father: "លោក អ៊ុំ សុវណ្ណ",
       mother: "លោកស្រី ចាន់ សុខា",

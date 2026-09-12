@@ -18,14 +18,14 @@
 export const weddingConfig = {
   couple: {
     bride: {
-      name: "សុភ័ក្ត្រា",
-      fullName: "សេង សុភ័ក្ត្រា",
+      name: "គីមឡែន",
+      fullName: "លួប គីមឡែន",
       photo: "/images/bride.jpg",       // <--- Put your image path here
       portrait: "/images/bride.jpg",    // <--- Put your image path here
     },
     groom: {
-      name: "រតនៈ",
-      fullName: "សុវណ្ណ រតនៈ",
+      name: "សារៈ",
+      fullName: "រុន សារៈ",
       photo: "/images/groom.jpg",       // <--- Put your image path here
       portrait: "/images/groom.jpg",    // <--- Put your image path here
     },
