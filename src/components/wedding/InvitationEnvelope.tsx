@@ -87,7 +87,7 @@ export const InvitationEnvelope: React.FC<InvitationEnvelopeProps> = ({ onOpen }
                   onClick={handleOpenClick}
                 >
                   <span className="text-[#4A0E17] font-playfair font-bold text-lg sm:text-xl">
-                    R & S
+                    S & K
                   </span>
                 </div>
               </motion.div>
