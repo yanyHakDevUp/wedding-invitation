@@ -1,67 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Kantumruy+Pro:ital,wght@0,300..700;1,300..700&family=Noto+Serif+Khmer:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @layer base {
   :root {
-    --font-serif-khmer: var(--font-noto-serif-khmer), serif;
-    --font-sans-khmer: var(--font-noto-sans-khmer), sans-serif;
-    --font-playfair: var(--font-playfair), serif;
+    --font-title-khmer: 'Noto Serif Khmer', 'Battambang', serif;
+    --font-sans-khmer: 'Kantumruy Pro', 'Battambang', sans-serif;
+    --font-battambang: 'Battambang', sans-serif;
+    --font-playfair: var(--font-playfair), 'Playfair Display', serif;
+
+    /* White Main Theme + Deep Cherry Red Accents */
+    --color-bg-light: #FAF8F5;
+    --color-cherry: #6B0D18;
+    --color-cherry-deep: #4A0E17;
+    --color-gold: #C8A96B;
   }
 
   body {
-    font-family: var(--font-sans-khmer);
-    background-color: #071426;
-    color: #F5F1E8;
+    font-family: 'Kantumruy Pro', var(--font-sans-khmer), sans-serif;
+    background-color: #FAF8F5;
+    color: #2D2D2D;
+    line-height: 1.8;
   }
 
-  h1, h2, h3, .font-serif-khmer {
-    font-family: var(--font-serif-khmer);
+  /* Formal Khmer Titles with Sub-consonant Feet (អក្សរមានជើង) in Rich Cherry Red */
+  h1, h2, h3, .font-title-khmer, .font-serif-khmer, .font-regal-khmer {
+    font-family: 'Noto Serif Khmer', var(--font-title-khmer), serif;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #6B0D18;
+    letter-spacing: 0.01em;
   }
 
-  .font-playfair {
-    font-family: var(--font-playfair);
+  .font-sans-khmer, .font-kantumruy {
+    font-family: 'Kantumruy Pro', var(--font-sans-khmer), sans-serif;
+  }
+
+  .font-battambang {
+    font-family: 'Battambang', var(--font-battambang), sans-serif;
   }
 }
 
-/* Custom Gold Text Gradients */
-.text-gold-gradient {
-  background: linear-gradient(135deg, #F5E5C0 0%, #C8A96B 50%, #9E7D3B 100%);
+/* Cherry Red Text Classes */
+.text-cherry {
+  color: #6B0D18;
+}
+
+.text-cherry-gradient {
+  background: linear-gradient(135deg, #8A1020 0%, #6B0D18 50%, #4A0E17 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.text-gold-bright {
-  background: linear-gradient(180deg, #FFFFFF 0%, #E4D2A3 60%, #C8A96B 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.bg-cherry-theme {
+  background-color: #6B0D18;
 }
 
-.bg-navy-dark {
-  background-color: #071426;
+.bg-cherry-card {
+  background-color: #540B13;
+  color: #FFFFFF;
 }
 
-.bg-navy-deep {
-  background-color: #0B1930;
-}
-
-.bg-navy-card {
-  background-color: rgba(13, 27, 50, 0.75);
-}
-
-.border-gold-subtle {
-  border-color: rgba(200, 169, 107, 0.25);
+.border-cherry-subtle {
+  border-color: rgba(107, 13, 24, 0.25);
 }
 
 .border-gold-glow {
   border-color: rgba(200, 169, 107, 0.6);
-  box-shadow: 0 0 15px rgba(200, 169, 107, 0.2);
+  box-shadow: 0 0 15px rgba(200, 169, 107, 0.25);
 }
 
-/* Glassmorphism */
-.glass-card {
-  background: rgba(11, 25, 48, 0.65);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(200, 169, 107, 0.2);
+/* Glassmorphism Card */
+.glass-card-cherry {
+  background: linear-gradient(135deg, #540B13 0%, #3D070D 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(200, 169, 107, 0.4);
+  box-shadow: 0 20px 45px rgba(107, 13, 24, 0.25);
+}
+
+.glass-card-white {
+  background: rgba(255, 255, 255, 0.95);
+  color: #2D2D2D;
+  border: 1px solid rgba(107, 13, 24, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
 }
 
 /* Custom Scrollbar */
@@ -69,22 +89,12 @@
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #071426;
+  background: #FAF8F5;
 }
 ::-webkit-scrollbar-thumb {
-  background: #C8A96B;
+  background: #6B0D18;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #E4D2A3;
-}
-
-/* Subtle Shimmer Animation */
-@keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
-.animate-shimmer {
-  animation: shimmer 3s infinite;
+  background: #8A1020;
 }

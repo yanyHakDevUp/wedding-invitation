@@ -24,7 +24,7 @@ export const Gallery: React.FC = () => {
   };
 
   return (
-    <section className="relative w-full py-20 sm:py-28 px-4 sm:px-6 bg-[#071426] overflow-hidden" id="gallery">
+    <section className="relative w-full py-20 sm:py-28 px-4 sm:px-6 bg-[#FAF8F5] overflow-hidden" id="gallery">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -33,7 +33,7 @@ export const Gallery: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="text-[#C8A96B] font-serif-khmer text-sm tracking-widest uppercase mb-2"
+            className="text-[#6B0D18] font-title-khmer text-sm sm:text-base font-bold tracking-widest uppercase mb-2"
           >
             កម្រងរូបថត
           </motion.p>
@@ -42,11 +42,11 @@ export const Gallery: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-2xl sm:text-4xl font-serif-khmer font-bold text-[#F5F1E8] text-gold-bright"
+            className="text-2xl sm:text-4xl font-title-khmer font-extrabold text-[#6B0D18]"
           >
             រូបថតអនុស្សាវរីយ៍
           </motion.h2>
-          <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-[#C8A96B] to-transparent mx-auto mt-4" />
+          <div className="w-16 h-[1.5px] bg-gradient-to-r from-transparent via-[#6B0D18] to-transparent mx-auto mt-4" />
         </div>
 
         {/* Editorial Masonry Grid */}
@@ -59,7 +59,7 @@ export const Gallery: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: idx * 0.1 }}
               onClick={() => openLightbox(idx)}
-              className={`relative overflow-hidden rounded-2xl cursor-pointer group glass-card border border-[#C8A96B]/20 ${
+              className={`relative overflow-hidden rounded-2xl cursor-pointer group glass-card-white border-2 border-[#6B0D18]/20 ${
                 img.aspect === "landscape" ? "sm:col-span-2 aspect-[16/9]" : "aspect-[3/4]"
               }`}
             >
@@ -68,8 +68,8 @@ export const Gallery: React.FC = () => {
                 alt={img.alt}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#071426]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <span className="text-[#F5F1E8] font-sans-khmer text-sm">
+              <div className="absolute inset-0 bg-gradient-to-t from-[#6B0D18]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <span className="text-[#FFFFFF] font-title-khmer text-sm font-bold">
                   {img.alt}
                 </span>
               </div>
@@ -85,12 +85,12 @@ export const Gallery: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-[#071426]/95 backdrop-blur-xl flex items-center justify-center p-4 sm:p-8"
+            className="fixed inset-0 z-50 bg-[#1A0408]/96 backdrop-blur-xl flex items-center justify-center p-4 sm:p-8"
           >
             {/* Close Button */}
             <button
               onClick={closeLightbox}
-              className="absolute top-6 right-6 p-3 rounded-full bg-[#0B1930] text-[#F5F1E8] hover:text-[#C8A96B] border border-[#C8A96B]/30 z-50 transition-all"
+              className="absolute top-6 right-6 p-3 rounded-full bg-[#6B0D18] text-[#FFFFFF] hover:text-[#D4AF37] border border-[#D4AF37]/50 z-50 transition-all cursor-pointer shadow-lg"
             >
               <X className="w-6 h-6" />
             </button>
@@ -98,7 +98,7 @@ export const Gallery: React.FC = () => {
             {/* Prev Button */}
             <button
               onClick={prevImage}
-              className="absolute left-4 sm:left-8 p-3 rounded-full bg-[#0B1930] text-[#F5F1E8] hover:text-[#C8A96B] border border-[#C8A96B]/30 z-50 transition-all"
+              className="absolute left-4 sm:left-8 p-3 rounded-full bg-[#6B0D18] text-[#FFFFFF] hover:text-[#D4AF37] border border-[#D4AF37]/50 z-50 transition-all cursor-pointer shadow-lg"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
@@ -110,7 +110,7 @@ export const Gallery: React.FC = () => {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="relative max-w-4xl max-h-[85vh] rounded-2xl overflow-hidden shadow-2xl border border-[#C8A96B]/40"
+              className="relative max-w-4xl max-h-[85vh] rounded-2xl overflow-hidden shadow-2xl border-2 border-[#D4AF37]"
             >
               <img
                 src={weddingConfig.media.gallery[selectedIdx].src}
@@ -122,7 +122,7 @@ export const Gallery: React.FC = () => {
             {/* Next Button */}
             <button
               onClick={nextImage}
-              className="absolute right-4 sm:right-8 p-3 rounded-full bg-[#0B1930] text-[#F5F1E8] hover:text-[#C8A96B] border border-[#C8A96B]/30 z-50 transition-all"
+              className="absolute right-4 sm:right-8 p-3 rounded-full bg-[#6B0D18] text-[#FFFFFF] hover:text-[#D4AF37] border border-[#D4AF37]/50 z-50 transition-all cursor-pointer shadow-lg"
             >
               <ChevronRight className="w-6 h-6" />
             </button>

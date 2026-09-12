@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Serif_Khmer, Noto_Sans_Khmer, Playfair_Display } from "next/font/google";
+import { Noto_Serif_Khmer, Kantumruy_Pro, Battambang, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const notoSerifKhmer = Noto_Serif_Khmer({
@@ -9,10 +9,17 @@ const notoSerifKhmer = Noto_Serif_Khmer({
   display: "swap",
 });
 
-const notoSansKhmer = Noto_Sans_Khmer({
-  variable: "--font-noto-sans-khmer",
+const kantumruyPro = Kantumruy_Pro({
+  variable: "--font-kantumruy",
   subsets: ["khmer"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
+const battambang = Battambang({
+  variable: "--font-battambang",
+  subsets: ["khmer"],
+  weight: ["400", "700"],
   display: "swap",
 });
 
@@ -34,8 +41,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="km" className={`scroll-smooth ${notoSerifKhmer.variable} ${notoSansKhmer.variable} ${playfairDisplay.variable}`}>
-      <body className="bg-[#071426] text-[#F5F1E8] font-sans antialiased selection:bg-[#C8A96B] selection:text-[#071426] overflow-x-hidden">
+    <html
+      lang="km"
+      className={`scroll-smooth ${notoSerifKhmer.variable} ${kantumruyPro.variable} ${battambang.variable} ${playfairDisplay.variable}`}
+    >
+      <body className="bg-[#FAF8F5] text-[#2D2D2D] antialiased selection:bg-[#6B0D18] selection:text-[#FFFFFF] overflow-x-hidden font-kantumruy">
         {children}
       </body>
     </html>
