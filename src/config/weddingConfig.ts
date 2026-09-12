@@ -74,8 +74,8 @@ export const weddingConfig: WeddingConfig = {
       role: "កូនក្រមុំ",
       father: "លោក ហាក់ នឿន",
       mother: "លោកស្រី ញិប សេងហ៊ុន",
-      photo: "/img/2.PNG",
-      portrait: "/img/2.PNG",
+      photo: "/img/1.JPEG",
+      portrait: "/img/1.JPEG",
     },
     groom: {
       name: "សារៈ",
@@ -83,8 +83,8 @@ export const weddingConfig: WeddingConfig = {
       role: "កូនកំលោះ",
       father: "លោក គី រុន",
       mother: "លោកស្រី ឃុត មករា",
-      photo: "/img/1.JPEG",
-      portrait: "/img/1.JPEG",
+      photo: "/img/2.PNG",
+      portrait: "/img/2.PNG",
     },
   },
 
