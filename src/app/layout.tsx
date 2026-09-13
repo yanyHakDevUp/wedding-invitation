@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Serif_Khmer, Kantumruy_Pro, Battambang, Playfair_Display } from "next/font/google";
+import { Noto_Serif_Khmer, Kantumruy_Pro, Battambang, Playfair_Display, Great_Vibes, Cinzel, Moul } from "next/font/google";
 import "./globals.css";
 
 const notoSerifKhmer = Noto_Serif_Khmer({
@@ -27,6 +27,27 @@ const playfairDisplay = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
   weight: ["400", "600", "700"],
+  display: "swap",
+});
+
+const greatVibes = Great_Vibes({
+  variable: "--font-script-vibes",
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
+
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
+});
+
+const moul = Moul({
+  variable: "--font-moul",
+  subsets: ["khmer"],
+  weight: ["400"],
   display: "swap",
 });
 
@@ -62,7 +83,7 @@ export default function RootLayout({
   return (
     <html
       lang="km"
-      className={`scroll-smooth ${notoSerifKhmer.variable} ${kantumruyPro.variable} ${battambang.variable} ${playfairDisplay.variable}`}
+      className={`scroll-smooth ${notoSerifKhmer.variable} ${kantumruyPro.variable} ${battambang.variable} ${playfairDisplay.variable} ${greatVibes.variable} ${cinzel.variable} ${moul.variable}`}
     >
       <body className="bg-[#FAF8F5] text-[#2D2D2D] antialiased selection:bg-[#6B0D18] selection:text-[#FFFFFF] overflow-x-hidden font-kantumruy">
         {children}

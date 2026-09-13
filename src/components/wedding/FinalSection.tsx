@@ -37,7 +37,7 @@ export const FinalSection: React.FC = () => {
           transition={{ duration: 1, delay: 0.3 }}
           className="text-2xl sm:text-3xl font-title-khmer font-extrabold text-[#F5E5C0]"
         >
-          {weddingConfig.couple.bride.fullName} & {weddingConfig.couple.groom.fullName}
+          {weddingConfig.couple.groom.fullName} &amp; {weddingConfig.couple.bride.fullName}
         </motion.h3>
 
         <motion.p

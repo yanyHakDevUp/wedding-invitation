@@ -38,7 +38,7 @@ export const CinematicQuote: React.FC = () => {
           className="pt-4"
         >
           <span className="text-[#F5E5C0] font-title-khmer text-xl sm:text-2xl font-bold tracking-wider">
-            {weddingConfig.couple.bride.name} & {weddingConfig.couple.groom.name}
+            {weddingConfig.couple.groom.name} &amp; {weddingConfig.couple.bride.name}
           </span>
         </motion.div>
       </div>

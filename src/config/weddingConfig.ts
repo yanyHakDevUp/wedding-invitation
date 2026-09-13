@@ -68,15 +68,6 @@ export interface WeddingConfig {
 
 export const weddingConfig: WeddingConfig = {
   couple: {
-    bride: {
-      name: "គីមឡែន",
-      fullName: "លួប គីមឡែន",
-      role: "កូនក្រមុំ",
-      father: "លោក ហាក់ នឿន",
-      mother: "លោកស្រី ញិប សេងហ៊ុន",
-      photo: "/img/1.JPEG",
-      portrait: "/img/1.JPEG",
-    },
     groom: {
       name: "សារៈ",
       fullName: "រុន សារៈ",
@@ -85,6 +76,15 @@ export const weddingConfig: WeddingConfig = {
       mother: "លោកស្រី ឃុត មករា",
       photo: "/img/2.PNG",
       portrait: "/img/2.PNG",
+    },
+    bride: {
+      name: "គីមឡែន",
+      fullName: "លួប គីមឡែន",
+      role: "កូនក្រមុំ",
+      father: "លោក ហាក់ នឿន",
+      mother: "លោកស្រី ញិប សេងហ៊ុន",
+      photo: "/img/1.JPEG",
+      portrait: "/img/1.JPEG",
     },
   },
 
@@ -155,8 +155,8 @@ export const weddingConfig: WeddingConfig = {
     videoUrl: "/img/video.mp4",
     audioUrl: "https://www.youtube.com/watch?v=-uyCMdjWK5Y&list=RD-uyCMdjWK5Y&start_radio=1",
     gallery: [
-      { id: 1, src: "/img/2.PNG", alt: "កូនក្រមុំ", aspect: "portrait" },
-      { id: 2, src: "/img/1.JPEG", alt: "កូនកំលោះ", aspect: "portrait" },
+      { id: 1, src: "/img/2.PNG", alt: "កូនកំលោះ", aspect: "portrait" },
+      { id: 2, src: "/img/1.JPEG", alt: "កូនក្រមុំ", aspect: "portrait" },
       { id: 3, src: "/img/6.jpg", alt: "រូបថតអាពាហ៍ពិពាហ៍", aspect: "landscape" },
       { id: 4, src: "/img/4.PNG", alt: "រូបថតអនុស្សាវរីយ៍", aspect: "portrait" },
       { id: 5, src: "/img/5.JPG", alt: "រូបថតគូស្នេហ៍", aspect: "square" },

@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Kantumruy+Pro:ital,wght@0,300..700;1,300..700&family=Noto+Serif+Khmer:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Battambang:wght@400;700&family=Great+Vibes&family=Kantumruy+Pro:ital,wght@0,300..700;1,300..700&family=Moul&family=Noto+Serif+Khmer:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..800;1,400..800&display=swap');
 @import "tailwindcss";
 
 @layer base {
   :root {
-    --font-title-khmer: 'Noto Serif Khmer', 'Battambang', serif;
-    --font-sans-khmer: 'Kantumruy Pro', 'Battambang', sans-serif;
-    --font-battambang: 'Battambang', sans-serif;
+    --font-moul: var(--font-moul), 'Moul', 'Noto Serif Khmer', serif;
+    --font-title-khmer: var(--font-noto-serif-khmer), 'Noto Serif Khmer', 'Battambang', serif;
+    --font-sans-khmer: var(--font-kantumruy), 'Kantumruy Pro', 'Battambang', sans-serif;
+    --font-battambang: var(--font-battambang), 'Battambang', sans-serif;
     --font-playfair: var(--font-playfair), 'Playfair Display', serif;
+    --font-script: var(--font-script-vibes), 'Great Vibes', 'Alex Brush', cursive;
 
     /* White Main Theme + Deep Cherry Red Accents */
     --color-bg-light: #FAF8F5;
@@ -31,12 +33,24 @@
     letter-spacing: 0.01em;
   }
 
+  .font-moul {
+    font-family: var(--font-moul), 'Moul', 'Noto Serif Khmer', serif;
+  }
+
+  .font-title-khmer, .font-serif-khmer {
+    font-family: var(--font-noto-serif-khmer), 'Noto Serif Khmer', 'Battambang', serif;
+  }
+
   .font-sans-khmer, .font-kantumruy {
-    font-family: 'Kantumruy Pro', var(--font-sans-khmer), sans-serif;
+    font-family: var(--font-kantumruy), 'Kantumruy Pro', 'Battambang', sans-serif;
   }
 
   .font-battambang {
-    font-family: 'Battambang', var(--font-battambang), sans-serif;
+    font-family: var(--font-battambang), 'Battambang', sans-serif;
+  }
+
+  .font-script {
+    font-family: var(--font-script-vibes), 'Great Vibes', 'Alex Brush', cursive;
   }
 }
 
